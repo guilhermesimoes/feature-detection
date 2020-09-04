@@ -3,7 +3,7 @@ import SocketServer
 import sys
 import json
 
-PORT = 1111 if len(sys.argv) == 1 else int(sys.argv[1])
+PORT = 80 if len(sys.argv) == 1 else int(sys.argv[1])
 
 class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_POST(self):
